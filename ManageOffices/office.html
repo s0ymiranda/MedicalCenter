@@ -1,0 +1,82 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorios</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/consult-office.js"></script>
+    <script defer src="scripts/date.js"></script>
+</head>
+<body>  
+    <header>
+        <nav class="first-nav">
+            <ul class="navigation">
+                <li><a href="#" onclick="togglemenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+        <h3 class="date-header"></h3>
+    </header>
+    <main>
+        <div class="main-content">
+            <h2>Organizacion - Usuario - Rol</h2>
+            <h1>Consultorio</h1>
+            <form id="office-form">
+                <div>
+                    <label for="name">Nombre del Consultorio:</label>
+                    <input type="text" id="name" disabled>
+                </div>
+                <div>
+                    <label for="floor">Piso:</label>
+                    <input type="text" id="floor" disabled>
+                    <label for="wing">Ala:</label>
+                    <input type="text" id="wing" disabled>
+                </div>
+                <div>
+                    <label for="state">Estado del Consultorio:</label>
+                    <input type="text" id="state" maxlength="50" disabled>
+                </div>
+                <div>
+                    <label for="active">¿Está Activo?</label>
+                    <select id="active" disabled>
+                        <option value="true">Sí</option>
+                        <option value="false">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="observations">Observaciones:</label>
+                    <input type="text" id="observations" maxlength="50" disabled>
+                </div>
+            </form>
+            <div class="buttons">
+                <button id="edit">Modificar Consultorio</button>
+                <button id="save" style="display: none;">Guardar Cambios</button>
+                <button id="back" onclick="location.href='index-offices.html'">Volver</button>
+            </div>
+        </div>
+    </main>   
+    
+    <footer>
+        <p class="last-updated">Last Updated</p>
+        <nav  class="footer-navigation not-small">
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

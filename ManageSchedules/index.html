@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts/date_menu.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <div class="body-content">
+        <header>
+            <nav class="first-nav">
+                <ul class="navigation">
+                    <li><a href="#" onclick="togglemenu()">&#9776;</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+            <h3 class="date-header"></h3>
+        </header>
+        <main>
+            <div class="main-content">
+                <h2>Organizacion - Usuario - Rol</h2>
+                <h1 id="nombreMedico">Horario de ¨Nombre del Medico¨</h1>
+                <table>
+                    <tr>
+                        <th>Hora</th>
+                        <th id="lunes">Lunes</th>
+                        <th id="martes">Martes</th>
+                        <th id="miércoles">Miércoles</th>
+                        <th id="jueves">Jueves</th>
+                        <th id="viernes">Viernes</th>
+                    </tr>
+                    <tr>
+                        <td>07:00 AM</td>
+                        <td id="lunes0700am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0700am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0700am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0700am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0700am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>08:00 AM</td>
+                        <td id="lunes0800am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0800am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0800am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0800am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0800am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td id="lunes0900am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0900am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0900am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0900am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0900am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td id="lunes1000am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes1000am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles1000am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves1000am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes1000am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td id="lunes1100am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes1100am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles1100am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves1100am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes1100am" class="withcheckbox">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM</td>
+                        <td id="lunes1200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes1200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles1200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves1200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes1200pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>01:00 PM</td>
+                        <td id="lunes0100pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0100pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0100pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0100pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0100pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM</td>
+                        <td id="lunes0200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0200pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0200pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03:00 PM</td>
+                        <td id="lunes0300pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0300pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0300pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0300pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0300pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>04:00 PM</td>
+                        <td id="lunes0400pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0400pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0400pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0400pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0400pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>05:00 PM</td>
+                        <td id="lunes0500pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0500pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0500pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0500pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0500pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>06:00 PM</td>
+                        <td id="lunes0600pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0600pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0600pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0600pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0600pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>07:00 PM</td>
+                        <td id="lunes0700pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="martes0700pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="miércoles0700pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="jueves0700pm">
+                            <input type="checkbox">
+                        </td>
+                        <td id="viernes0700pm">
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+                </table>
+                <div class="buttons">
+                    <button id="modificar">Modificar Horario</button>
+                    <button id="guardar" disabled>Guardar Horario</button>
+                </div>
+            </div>
+            <div id="loadingModal" class="modal">
+                <div class="modal-content">
+                    <div id="loader"></div>
+                    <p id="loadingText">Cargando</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="last-updated">Last Updated</p>
+            <nav  class="footer-navigation not-small">
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorios</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/main-page.js"></script>
+    <script defer src="scripts/date.js"></script>
+</head>
+<body>  
+    <header>
+        <nav class="first-nav">
+            <ul class="navigation">
+                <li><a href="#" onclick="togglemenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+        <h3 class="date-header"></h3>
+    </header>
+    <main>
+        <div class="main-content">
+            <h2>Organizacion - Usuario - Rol</h2>
+            <h1>Consultorios</h1>
+            <div class="search-form">
+                <div>
+                    <label for="floor">Piso:</label>
+                    <select id="floor">
+                        <option value="all">Todos</option>
+                        <option value="f1">1</option>
+                        <option value="f2">2</option>
+                        <option value="f3">3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="wing">Ala:</label>
+                    <select id="wing">
+                        <option value="all">Todos</option>
+                        <option value="wA">A</option>
+                        <option value="wB">B</option>
+                        <option value="wC">C</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="result" class="offices-list">
+                <!-- offices will be added here -->
+            </div>
+
+            <div class="buttons">
+                <button id="consult" disabled>Consultar Consultorio</button>
+                <button id="add" onclick="location.href='add.html'">Agregar Consultorio</button>
+            </div>
+        </div>
+    </main>   
+    
+    <footer>
+        <p class="last-updated">Last Updated</p>
+        <nav  class="footer-navigation not-small">
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
