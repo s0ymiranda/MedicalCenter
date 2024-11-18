@@ -21,7 +21,7 @@ This is a simple CRUD (Create, Read, Update, Delete) application for managing me
 
 ## Getting Started
 
-To get started with the Medical Office CRUD application, please follow the instructions below.
+To get started with the Medical Center CRUD application, please follow the instructions below.
 
 ### Prerequisites
 
