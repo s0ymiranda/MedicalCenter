@@ -1,12 +1,26 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorios</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="scripts/date_menu.js"></script>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            if (username === "admin" && password === "admin") {
+                location.href = '/home.html';
+            } else {
+                alert("Credenciales inválidas. Por favor, intenta de nuevo.");
+            }
+        }
+    </script>
 </head>
-<body>  
+
+<body>
     <header>
         <nav class="first-nav">
             <ul class="navigation">
@@ -17,10 +31,9 @@
     </header>
     <main>
         <div class="main-content">
-
             <div class="login-container">
                 <h2>Iniciar Sesión</h2>
-                <form action="/ruta_del_servidor" method="POST">
+                <form action="/ruta_del_servidor" method="POST" onsubmit="handleLogin(event);">
                     <div class="form-group">
                         <label for="username">Nombre de Usuario</label>
                         <input type="text" id="username" name="username" required>
@@ -29,15 +42,19 @@
                         <label for="password">Contraseña</label>
                         <input type="password" id="password" name="password" required>
                     </div>
-                    <button id="login" onclick="location.href='home.html'">Iniciar Sesion</button>
+                    <button id="login" type="submit">Iniciar Sesión</button>
                 </form>
             </div>
+            <div class="register-prompt">
+                <h3>¿No tienes una cuenta?</h3>
+                <p>Si no tienes una cuenta, puedes registrarte fácilmente.</p>
+                <a href="registration.html" class="register-link">Crear Cuenta</a>
+            </div>
         </div>
-    </main>   
-    
+    </main>
     <footer>
-        <p class="last-updated">Last Updated</p>
-        <nav  class="footer-navigation not-small">
+        <p class="last-updated">Última Actualización</p>
+        <nav class="footer-navigation not-small">
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
@@ -56,4 +73,5 @@
         </div>
     </footer>
 </body>
+
 </html>
